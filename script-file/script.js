@@ -223,3 +223,26 @@ function historyItems() {
  };    
 };
 
+// clear button 
+document.getElementById("clear-btn").addEventListener("click", function () {
+    const historyList = document.getElementById("history-list");
+    historyList.style.display = "none"
+});
+
+// copy btn 
+// use Delegation
+ document.querySelector("#items").addEventListener("click", (e) => {
+    if (e.target.closest(".copy-btn")) {
+      const serviceItem = e.target.closest(".service-item");
+      const number = serviceItem.querySelector(".e-number").innerText;
+      navigator.clipboard.writeText(number).then(() => {
+        alert(`✅ Copy to Clipboard: ${number}`);
+        let navCount = document.getElementById("nav-count");
+        let navCountNum = Number(document.getElementById("nav-count").innerText);
+        navCountNum++;
+        navCount.innerText = navCountNum;
+      });
+      
+    };
+  });
+

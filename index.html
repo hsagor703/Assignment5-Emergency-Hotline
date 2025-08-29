@@ -28,7 +28,7 @@
         <div class="nav-section-right flex items-center gap-4">
              <button id="heart-btn" class="heard flex items-center gap-4 bg-[#ECFFF0] px-8 py-2 rounded-full font-bold"><span id="heart-count">0</span><img class="w-12" src="assets/heart.png" alt=""></button>
              <button class="coin flex items-center gap-4 bg-[#ECFFF0] px-8 py-2 rounded-full font-bold"><span id="coins">100</span><img class="w-12" src="assets/coin.png" alt=""></button>
-             <button class="copy bg-green-600 text-white  px-12 py-1 md:py-5 rounded-full font-semibold"><span>0</span> Copy</button>
+             <button id="nav-copy" class="copy bg-green-600 text-white  px-12 py-1 md:py-5 rounded-full font-semibold"><span id="nav-count">0</span> Copy</button>
         </div>
      </nav>
     <!-- nav section ends here  -->
@@ -46,8 +46,8 @@
         <!-- service section start here  -->
          <section class="service-section bg-[#ECFFF0]">
             <div class="py-12 grid md:grid-cols-12 gap-7 md:w-[1600px] mx-auto ">
-            <div class="service-items md:col-span-9 grid md:grid-cols-3 gap-4">
-                <div class="service-item p-8 bg-white rounded-xl w-[380px] shadow-lg">
+            <div id="items" class="service-items md:col-span-9 grid md:grid-cols-3 gap-4">
+                <div class="service-item p-8 bg-white rounded-xl w-[380px] shadow-lg ">
                     <div class="image-and-icon flex justify-between items-center">
                         <img class="w-14 bg-[#FFE3E2] p-3 rounded-2xl" src="assets/emergency.png" alt="emergency">
                         <i id="all-heart" class="fa-regular fa-heart text-2xl text-gray-600"></i>
@@ -213,7 +213,7 @@
             <div class="service-history bg-white md:col-span-3 p-8 shadow-lg">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="history-title text-2xl font-bold"><i class="fa-regular fa-clock text-[#5C5C5C]"></i> Call History</h2>
-                    <button class="clear-btn text-white px-9 py-3 bg-green-600 rounded-full">Clear</button>
+                    <button id="clear-btn" class="clear-btn text-white px-9 py-3 bg-green-600 rounded-full">Clear</button>
                 </div>
 
                <div id="history-list">
